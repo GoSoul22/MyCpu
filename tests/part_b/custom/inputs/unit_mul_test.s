@@ -1,0 +1,10 @@
+add s0, x0, x0		# s0 = 0
+addi s0, s0, 3		# s0 = 3
+addi s1, x0, 666	# s1 = 666
+mul a0, s1, x0 		# a0 = 0
+mul a0, s0, s1		# a0 = 666 * 3
+addi s1, x0, -567	# s1 = -567
+mul s0, s0, s1		# s0 = 3 * -567
+mul s1, s1, x0		# s1 = 0
+mul s0, s1, s0		# s0 = 0
+mul a0, s0, s1		# a0 = 0
